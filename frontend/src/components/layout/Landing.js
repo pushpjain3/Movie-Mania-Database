@@ -11,6 +11,7 @@ function Landing() {
       <GenreListShort genre="horror" />
       <GenreListShort genre="romance" />
       <GenreListShort genre="drama" />
+      <hr />
     </div>
   );
 }
