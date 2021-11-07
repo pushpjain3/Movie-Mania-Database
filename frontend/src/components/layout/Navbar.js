@@ -22,13 +22,6 @@ const authLinks = (
   <Fragment>
     <ul>
       <li>
-        <Link to="/feed">Feed</Link>
-      </li>
-      <li>
-        <Link to="/chatrooms">Chatrooms</Link>
-      </li>
-
-      <li>
         <div className="dropdown">
           <button className="dropbtn">
             <div className="nav-profile">
@@ -37,7 +30,7 @@ const authLinks = (
                 src="https://randomuser.me/api/portraits/men/1.jpg"
                 alt="Profile Pic"
               />
-              <h3 className="nav-username">Lorem Ipsum</h3>
+              <h3 className="nav-username">John Doe</h3>
             </div>
           </button>
           <div className="dropdown-content">
@@ -74,13 +67,26 @@ const authLinks = (
 
 const Navbar = () => {
   return (
-    <nav className="navbar bg-graydark">
+    <nav className="navbar bg-dark">
       <div className="navbar-brand">
-        <Link to="/">
-          <i>
-            <BiCameraMovie />
-          </i>
-        </Link>
+        <ul>
+          <li>
+            <Link to="/">
+              <i>
+                <BiCameraMovie />
+              </i>
+            </Link>
+          </li>
+          <li>
+            <Link to="/">Home</Link>
+          </li>
+          <li>
+            <Link to="/">Movies</Link>
+          </li>
+          <li>
+            <Link to="/">TV Shows</Link>
+          </li>
+        </ul>
       </div>
       {authLinks}
     </nav>
