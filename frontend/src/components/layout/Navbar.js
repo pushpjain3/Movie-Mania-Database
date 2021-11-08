@@ -1,9 +1,10 @@
 import React, { Fragment } from "react";
 import { FaUser, FaCog } from "react-icons/fa";
 import { FiLogOut } from "react-icons/fi";
-import { HiMailOpen } from "react-icons/hi";
+import { HiMailOpen, HiOutlinePlusCircle } from "react-icons/hi";
 import { Link } from "react-router-dom";
 import { BiCameraMovie } from "react-icons/bi";
+import { AiTwotoneHeart } from "react-icons/ai";
 
 // const guestLinks = (
 //   <ul>
@@ -42,13 +43,13 @@ const authLinks = (
             </Link>
             <Link to="/settings">
               <i>
-                <FaCog />
+                <HiOutlinePlusCircle />
               </i>
               Watchlist
             </Link>
             <Link to="/contact">
               <i>
-                <HiMailOpen />
+                <AiTwotoneHeart />
               </i>
               Favourites
             </Link>
